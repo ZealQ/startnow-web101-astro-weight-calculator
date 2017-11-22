@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+
+
+<html>
+  <head>
+    <title>Astro Weight Calculator</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+       <!-- Custom CSS -->
+      <link href="styling.css" rel="stylesheet">
+        <!-- Javascript -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  
+  html {
+  font-size: 20px;
+  }
+  
+  .panel {
+  background: #333333;
+  border: solid white;
+  }
+  
+  .results {
+  font-size: 1em;
+  color: #FFFFFF;
+  }
+  
+  .dropdown {
+  margin-bottom: 50px;
+  }
+  
+  .inline-block {
+  display: inline-block;
+  }
+  
+  .center {
+  width: 90%;
+  margin: 0 auto 30px;
+  }
+  
+  </style>
+  </head>
+  <body background="https://wiki.guildwars2.com/images/a/ab/Twilight_background.jpg">
+  <div class="container">
+   <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="panel panel-primary text-center">
+        <div class="panel-heading">
+          <h4 class="panel-title">Astro Weight Calculator</h4>
+          </div>
+           <div class="error">
+             Please enter numeric value
+           </div>
+           <div class="panel-body">
+           <form class="form-vertical">
+           <!-- The input box where the user inputs weight value -->
+            <div class="form-group center">
+              <label for="">Enter Weight:</label>
+              <input  id="user-weight" class="amount form-control" placeholder="Enter wegiht" min="1">
+            </div>
+            <!-- The select button to pick a planet and  a weght on that planet -->
+            <div class="form-group inline-block">
+              <label for="">From planets:</label>
+              <select  id="planets"   class="currency-list form-control">
+                <option>--Select--</option>
+              </select>
+             <!-- The results of the calculation -->
+              <button type="button" id="calculate-button">Calculate Weight</button>
+            </div>
+          </form>
+          <p id="output" class="amount form-control" placeholder="Total" ></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src="main.js"charset="utf-8" ></script>
+   <!-- planet pictures -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-20">
+                <div class="thumbnail">
+                    <a href="https://image.slidesharecdn.com/earth-from-space-scale-of-earth-in-cosmos-context-2375/95/earth-from-space-scale-of-earth-in-cosmos-context-1-728.jpg?cb=1247811750" target="_blank">
+                        <img src="https://image.slidesharecdn.com/earth-from-space-scale-of-earth-in-cosmos-context-2375/95/earth-from-space-scale-of-earth-in-cosmos-context-1-728.jpg?cb=1247811750" alt="Pic1" style="width:100%">
+                    </a>
+                </div>
+            </div>
+      </body>
+  </html>
+  
