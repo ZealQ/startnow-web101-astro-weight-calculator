@@ -1,4 +1,4 @@
-// the multidementinal array with names and weights
+// the multidimensional array with names and weights
 var planets = [
     ['Pluto', 0.06],
     ['Neptune', 1.148],
@@ -19,11 +19,11 @@ var planets = [
   var selectL= document.getElementById("planets");
   var submitEl = document.getElementById("calculate-button");
   var output = document.getElementById("output");
-// the selsect button
+// the select button
    planets.forEach(function(item) {
-     // the multidementianl array 0 bing the name place holder
+     // the multidimensional array 0 being the name place holder
     var name = item[0];
-    // created the element option to input the array nmaes
+    // created the element option to input the array names
     var opt = document.createElement("option");
     //will select from parent element to put in the  new element
     var selectL= document.getElementById("planets");
@@ -31,14 +31,14 @@ var planets = [
     opt.setAttribute("value", name);
     //the way you get the text form an array 'the planet name'
     opt.innerHTML = item[0];
-    // how it all comes togehter buy attaching it
+    // how it all comes together buy attaching it
     selectL.appendChild(opt);
    });
 // the submit button (e) stands for event
   submitEl.onclick = function(e) {
-// the valuse of the user input
+// the value of the user input
     var userWeight = input.value;
-    // the valuse of the planets weight
+    // the value of the planets weight
     var userChoice = selectL.value;
     //the placement of the planets in muti-array
     var weight = 0;
@@ -52,7 +52,7 @@ var planets = [
         weight = item[1];
       }
     });
-    // the  asnswer to the calculation
+    // the  answer to the calculation
     var result = weight * userWeight;
     output.innerHTML= 'If you were on ' + userChoice + ', you would weigh '+ result +'lbs!';
     
